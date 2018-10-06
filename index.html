@@ -1,81 +1,186 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Ship To It - Company Packing List</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400" rel="stylesheet">
-  <link href="style.css" type="text/css" rel="stylesheet">
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
+    <!-- Owl CSS -->
+    <link rel="stylesheet" href="css/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/person.css">
+    <link rel="stylesheet" href="css/botton_to_top.css">
+    <script type="text/javascript" src="jsSrc/scroll_up.js"></script>
+
+  </head>
+
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+          <li class=""><a href="#">Home</a></li>
+        </ul>
+      </div>
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+          <li class=""><a href="index.html#presentation">Presentation</a></li>
+          <li class=""><a href="index.html#team">Team</a></li>
+          <li class=""><a href="">Referance</a></li>
+        </ul>
+    </nav>
+    <!-- paralax -->
+    <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -500" style="background-image: url('img/navimg.jpg');">
+      <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">HK 的 Indie Project</h1>
+    </div>
+
+    <!-- slideshow -->
+    <section id="presentation">
+      <h1 class="uk-margin-medium-top" style="text-align: center;">Project Presentation</h1>
+      <h3 class="uk-text-muted" style="text-align:center;">There are a few examples of our projects.</h3>
+
+    <div class="uk-padding-large uk-padding-remove-top">
+      <div class="owl-carousel owl-theme">
+
+        <div class="uk-padding uk-padding-remove-bottom">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+              <img src="img/1.jpg" alt="">
+          </div>
+          <div class="uk-card-body">Hello World</div>
+        </div>
+        </div>
+
+        <div class="uk-padding uk-padding-remove-bottom">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+              <img src="img/2.jpg" alt="">
+          </div>
+          <div class="uk-card-body">Hello World</div>
+        </div>
+        </div>
+        <div class="uk-padding">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+              <img src="img/3.jpg" alt="">
+          </div>
+          <div class="uk-card-body">Hello World</div>
+        </div>
+        </div>
+
+        <div class="uk-padding uk-padding-remove-bottom">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+              <img src="img/3.jpg" alt="">
+          </div>
+          <div class="uk-card-body">Hello World</div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <div class="person_row">
+      <div class="person_column">
+        <img src="img/person1.jpg" alt="Snow" style="width:10%">
+      </div>
+      <div class="person_column">
+        <img src="img/person3.jpg" alt="Snow" style="width:10%">
+      </div>
+    </div>
+    <div class="person_row">
+      <div class="person_column">
+        <img src="img/person2.jpg" alt="Snow" style="width:10%">
+      </div>
+    </div>
+
+    <section id="team">
+      <h1 class="uk-margin-medium-top" style="text-align: center;">Team members</h1>
+      <h3 class="uk-text-muted" style="text-align:center;">These are our amazing teammates!</h3>
 
 
-    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
-
-    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
-
-    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
 
 
-  <ul class="navigation">
-    <li>
-        <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/denero.html">
-        <img src="https://www2.eecs.berkeley.edu/Faculty/Photos/Homepages/denero.jpg" height="80px;">
-        </a>
-    </li>
-    <li class="active">
-        <a href="indep-proj.html">
-            world
-        </a>
-    </li>
-    <li>ACB</li>
-    <li>UDU</li>
-  </ul>
+      <div class="uk-padding-large uk-padding-remove-top">
+        <div class="owl-carousel owl-theme">
 
-  <div class="search">Search the table</div>
-  <table border="1">
-    <thead>
-      <tr>
-        <th scope="col">Company Name</th>
-        <th scope="col">Number of Items to Ship</th>
-        <th scope="col">Next Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Adam's Greenworks</td>
-        <td>14</td>
-        <td>Package Items</td>
-      </tr>
-      <tr>
-        <td>Davie's Burgers</td>
-        <td>2</td>
-        <td>Send Invoice</td>
-      </tr>
-      <tr>
-        <td>Baker's Bike Shop</td>
-        <td>3</td>
-        <td>Send Invoice</td>
-      </tr>
-      <tr>
-        <td rowspan="2">Miss Sally's Southern</td>
-        <td>4</td>
-        <td>Ship</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Ship</td>
-      </tr>
-      <tr>
-        <td>Strike Fitness</td>
-        <td colspan="2">No Order</td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <td>Total</td>
-      <td>28</td>
-    </tfoot>
-  </table>
+            <div class="uk-padding">
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-media-top">
+                  <div class="container">
+                    <img class="image" src="img/person1.jpg" alt="">
+                    <div class="middle">
+                      <div class="text">I am person 1!</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            </div>
 
+            <div class="uk-padding">
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-media-top">
+                  <div class="container">
+                    <img class="image" src="img/person2.jpg" alt="">
+                    <div class="middle">
+                      <div class="text">I am person 2!</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            </div>
 
+            <div class="uk-padding">
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-media-top">
+                  <div class="container">
+                    <img class="image" src="img/person3.jpg" alt="">
+                    <div class="middle">
+                      <div class="text">I am person 3!</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            </div>
 
-</body>
+            <div class="uk-padding">
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-media-top">
+                  <div class="container">
+                    <img class="image" src="img/person4.jpg" alt="">
+                    <div class="middle">
+                      <div class="text">I am person 4!</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- paralax -->
+    <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -500" style="background-image: url('img/4.jpg');">
+      <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">HK 的 Indie Project</h1>
+    </div>
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
+    <!-- owl JS -->
+    <script src="css/owl/jquery.min.js"></script>
+    <script src="css/owl/owl.carousel.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        nav: true,
+        loop: true
+      });
+    });
+    </script>
+
+  </body>
 </html>
