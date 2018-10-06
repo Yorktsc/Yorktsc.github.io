@@ -9,9 +9,15 @@
     <!-- Owl CSS -->
     <link rel="stylesheet" href="css/owl/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/person.css">
+    <link rel="stylesheet" href="css/botton_to_top.css">
+    <script type="text/javascript" src="jsSrc/scroll_up.js"></script>
+
   </head>
 
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
     <nav class="uk-navbar-container" uk-navbar>
       <div class="uk-navbar-left">
         <ul class="uk-navbar-nav">
@@ -20,8 +26,8 @@
       </div>
       <div class="uk-navbar-right">
         <ul class="uk-navbar-nav">
-          <li class=""><a href="">Presentation</a></li>
-          <li class=""><a href="">Team</a></li>
+          <li class=""><a href="index.html#presentation">Presentation</a></li>
+          <li class=""><a href="index.html#team">Team</a></li>
           <li class=""><a href="">Referance</a></li>
         </ul>
     </nav>
@@ -31,7 +37,7 @@
     </div>
 
     <!-- slideshow -->
-    <section>
+    <section id="presentation">
       <h1 class="uk-margin-medium-top" style="text-align: center;">Project Presentation</h1>
       <h3 class="uk-text-muted" style="text-align:center;">There are a few examples of our projects.</h3>
 
@@ -74,6 +80,86 @@
         </div>
       </div>
     </div>
+    </section>
+
+    <div class="person_row">
+      <div class="person_column">
+        <img src="img/person1.jpg" alt="Snow" style="width:10%">
+      </div>
+      <div class="person_column">
+        <img src="img/person3.jpg" alt="Snow" style="width:10%">
+      </div>
+    </div>
+    <div class="person_row">
+      <div class="person_column">
+        <img src="img/person2.jpg" alt="Snow" style="width:10%">
+      </div>
+    </div>
+
+    <section id="team">
+      <h1 class="uk-margin-medium-top" style="text-align: center;">Team members</h1>
+      <h3 class="uk-text-muted" style="text-align:center;">These are our amazing teammates!</h3>
+
+
+
+
+      <div class="uk-padding-large uk-padding-remove-top">
+        <div class="owl-carousel owl-theme">
+
+            <div class="uk-padding">
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-media-top">
+                  <div class="container">
+                    <img class="image" src="img/person1.jpg" alt="">
+                    <div class="middle">
+                      <div class="text">I am person 1!</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="uk-padding">
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-media-top">
+                  <div class="container">
+                    <img class="image" src="img/person2.jpg" alt="">
+                    <div class="middle">
+                      <div class="text">I am person 2!</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="uk-padding">
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-media-top">
+                  <div class="container">
+                    <img class="image" src="img/person3.jpg" alt="">
+                    <div class="middle">
+                      <div class="text">I am person 3!</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="uk-padding">
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-media-top">
+                  <div class="container">
+                    <img class="image" src="img/person4.jpg" alt="">
+                    <div class="middle">
+                      <div class="text">I am person 4!</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+
     </section>
 
     <!-- paralax -->
